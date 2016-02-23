@@ -1,0 +1,13 @@
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/models/Quote.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/models/Greeting.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/springDemoApplication.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/confige/DataSourceConfig.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/web/HelloController.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/models/Value.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/web/DeviceDetectionController.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/web/FileUploadController.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/service/CustomerService.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/models/CustomerEntity.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/repository/CustomerRepository.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/task/ScheduledTask.java
+/Users/xinhui/Work/springDemo/src/main/java/com/kuaizhan/huxinhui/springdemo/web/GreetingController.java

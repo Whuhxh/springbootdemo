@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="dm.config" name="dm Configuration for 'springDemo'">
+    <output-path>$PROJECT_DIR$/out/artifacts/dm_Configuration_for__springDemo_</output-path>
+    <root id="root">
+      <element id="packaging-for-dm-config" module="springDemo" />
+    </root>
+  </artifact>
+</component>
