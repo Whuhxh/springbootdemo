@@ -29,7 +29,7 @@ import java.util.Properties;
 @EnableJpaRepositories(
     entityManagerFactoryRef = "demoEntityManagerFactory",
     transactionManagerRef = "demoTransactionManager",
-    basePackageClasses = {CustomerEntity.class}
+    basePackageClasses = {CustomerRepository.class}
 )
 public class DataSourceConfig {
     @Autowired
