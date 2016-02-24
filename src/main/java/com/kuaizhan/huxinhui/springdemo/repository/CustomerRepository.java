@@ -21,6 +21,8 @@ public interface CustomerRepository extends JpaRepository<CustomerEntity, Long>{
     CustomerEntity findByFirstNameAndLastName(String firstName, String lastName);
 
     @Modifying
-    @Query("update CustomerEntity as c set c.firstName=:firstName, c.lastName=:lastName where c.id=:id")
-    void modifyFirstNameAndLastNameById(@Param(value = "id")long id);
+    @Query("update CustomerEntity c set c.firstName=:firstName, c.lastName=:lastName where c.id=:id")
+    void modifyFirstNameAndLastNameById(@Param(value = "id") long id,
+                                        @Param(value = "firstName") String firstName,
+                                        @Param(value = "lastName") String lastName);
 }

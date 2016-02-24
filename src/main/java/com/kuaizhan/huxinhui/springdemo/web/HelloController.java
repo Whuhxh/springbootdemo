@@ -62,7 +62,7 @@ public class HelloController {
         return "Deleting Customer successfully (id=" + request.getId() + ")";
     }
 
-    @RequestMapping(value = "/update", method = RequestMethod.PUT)
+    @RequestMapping(value = "/update", method = {RequestMethod.PUT, RequestMethod.POST})
     private String updateCustomer(@RequestBody UpdateCustomerRequest request){
         CustomerEntity customerEntity;
         try {
@@ -73,7 +73,7 @@ public class HelloController {
                 customerEntity.setLastName(request.getLastName());
                 customerEntity.setFirstName(request.getFirstName());
                 System.out.println(customerEntity);
-                customerRepository.modifyFirstNameAndLastNameById(id);
+                customerRepository.modifyFirstNameAndLastNameById(id,request.getFirstName(),request.getLastName());
             } else {
                 return "Update failed!";
             }
@@ -81,6 +81,6 @@ public class HelloController {
             e.printStackTrace();
             return "Error updating";
         }
-        return "Updating Customer successfully (id" + request.getId() + ")";
+        return "Updating Customer successfully (id=" + request.getId() + ")";
     }
 }

@@ -2,7 +2,10 @@ package com.kuaizhan.huxinhui.springdemo.web;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.kuaizhan.huxinhui.springdemo.models.CustomerEntity;
 import com.kuaizhan.huxinhui.springdemo.models.Greeting;
+import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -18,5 +21,12 @@ public class GreetingController {
     public @ResponseBody Greeting greeting(@RequestParam(value="name", defaultValue="World", required = false) String name) {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
+    }
+
+    @MessageMapping("/sayHello")
+    @SendTo("/topic/greetings")
+    public Greeting greetings(CustomerEntity message) throws Exception {
+        Thread.sleep(3000); // simulated delay
+        return new Greeting("Hello, " + message.getLastName() + "!");
     }
 }
