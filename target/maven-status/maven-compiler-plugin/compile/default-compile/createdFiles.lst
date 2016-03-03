@@ -3,6 +3,7 @@ com/kuaizhan/huxinhui/springdemo/web/FileUploadController.class
 com/kuaizhan/huxinhui/springdemo/models/Quote.class
 com/kuaizhan/huxinhui/springdemo/confige/DataSourceConfig.class
 com/kuaizhan/huxinhui/springdemo/models/Value.class
+com/kuaizhan/huxinhui/springdemo/confige/WebSocketConfig.class
 com/kuaizhan/huxinhui/springdemo/web/GreetingController.class
 com/kuaizhan/huxinhui/springdemo/springDemoApplication.class
 com/kuaizhan/huxinhui/springdemo/models/CustomerEntity.class
